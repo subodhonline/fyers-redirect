@@ -9,7 +9,7 @@
       const state = params.get("state");
 
       if (code) {
-        const deepLink = `rupeemint://redirect?auth_code=${code}&state=${state || ''}`;
+        const deepLink = `finovent://redirect?auth_code=${code}&state=${state || ''}`;
         window.location.href = deepLink;
       } else {
         document.body.innerText = "No auth_code in URL";
